@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { PenRuler, Layers, Wrench, Truck } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Дизайн-проект",
+    description: "Разрабатываем подробный проект с точными замерами, 3D-визуализацией и подбором материалов. Вы видите результат до начала производства.",
+    icon: PenRuler,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Изготовление мебели",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Производим кухонную мебель на собственном оборудовании. Полный контроль качества на каждом этапе — от раскроя до финишной обработки.",
+    icon: Layers,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Монтаж и установка",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Наши мастера устанавливают кухню точно по проекту. Подключаем технику, настраиваем фурнитуру и убираем после себя.",
+    icon: Wrench,
   },
   {
-    title: "Градостроительство",
+    title: "Доставка по России",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Доставляем и устанавливаем кухни по всей России. Работаем под ключ — от первого замера до финального результата.",
+    icon: Truck,
   },
 ]
 
@@ -59,12 +59,12 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Мастерство</HighlightedText>, отточенное
             <br />
-            практикой
+            годами
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Каждая кухня — это совместный путь от идеи до воплощения. Мы берём на себя весь процесс, чтобы вы получили именно то, о чём мечтали.
           </p>
         </div>
 
